@@ -1,3 +1,4 @@
+from unittest.util import _MAX_LENGTH
 import discord
 import random
 from discord.ext import commands
@@ -31,6 +32,7 @@ async def cambiar_caras(ctx, numcaras: int):
     if numcaras == caras_dado:
         await ctx.send("Altoque 👍")
         return
+    caras_dado = numcaras
     await ctx.send(f"🎲El dado cambio a {caras_dado} caras🎲")
 
 @bot.command()
