@@ -1,4 +1,3 @@
-from unittest.util import _MAX_LENGTH
 import discord
 import random
 from discord.ext import commands
